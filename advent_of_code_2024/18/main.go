@@ -21,13 +21,6 @@ type Node struct {
 	distance int
 }
 
-type State struct {
-	x, y      int
-	direction int      // 0: East, 1: South, 2: West, 3: North
-	cost      int      // Total score so far
-	path      []string // Path history (sequence of moves)
-}
-
 type PriorityQueue []Node
 
 func (pq PriorityQueue) Len() int           { return len(pq) }
